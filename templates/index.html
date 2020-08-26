@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>covid-19</title>
+
+    <link rel="stylesheet" 
+          href="{{ url_for('static',filename='css/bootstrap.css') }}" />
     
     <link rel="stylesheet" 
-          herf="{{ url_for('static',filename='css/bootstrap.css')}}" />
-    
-    <link rel="stylesheet" 
-          herf="{{ url_for('static',filename='css/bootstrap.css')}}" />
+          href="{{ url_for('static',filename='css/style.css') }}" />
 </head>
 <body>
     <div class="container">
@@ -18,7 +18,7 @@
         <div class="col-12">
             <img 
             src="{{ url_for('static', filename='img/rec.png')}}"
-            alt="Rectangle"
+            alt="Rec"
             id="logo"
             />
 
@@ -83,6 +83,6 @@
 
     </section>
     </div>
-    <script src="{{url_for( 'static',filename='js/index.js' )}}"></script>
+    <script src="{{url_for('static',filename='js/index.js')}}"></script>
 </body>
 </html>
